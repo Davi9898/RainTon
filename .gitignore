@@ -1,9 +1,4 @@
 .DS_Store
 .vscode
-<<<<<<< Updated upstream
-node_modules
-.env
-=======
 .env
 node_modules
->>>>>>> Stashed changes
