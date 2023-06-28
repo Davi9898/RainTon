@@ -73,12 +73,12 @@ let currentFieldsetIndex = 0;
 function updateProgress() {
     stappen.forEach((stap, index) => {
       if (index === currentFieldsetIndex) {
-        stap.classList.add('current');
+        stap.classList.add('groen');
       } else {
-        stap.classList.remove('current');
+        stap.classList.remove('groen');
       }
     });
-  }    
+  }
 
 function showFieldset(index) {
     fieldsets.forEach((fieldset, i) => {
