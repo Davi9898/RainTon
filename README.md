@@ -2,6 +2,9 @@
 
 ![image](https://github.com/Davi9898/bRAIN/assets/74150653/d6e7ac59-27d3-4cdb-b56a-b6bc9a11d0df)
 
+# Design rationale en productbiografie Daniël Vink
+Deze zijn te vinden in de [wiki](https://github.com/Davi9898/bRAIN/wiki).
+
 ## Live Demo
 https://rainton-production.up.railway.app/
 
