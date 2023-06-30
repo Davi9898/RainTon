@@ -1,7 +1,8 @@
 import { UserInfo } from './db.js';
 
 export const collectAndStoreRainData = async (data, userInfo) => {
-    const currentDayPrecipitation = data.daily.precipitation_sum[0];
+    console.log(data)
+    const currentDayPrecipitation = data.daily.precipitation_sum[1];
     let totalRain = userInfo.rainAmount || 0;
 
     totalRain += (currentDayPrecipitation * userInfo.roofSurface);

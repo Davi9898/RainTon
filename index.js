@@ -10,7 +10,7 @@ import { collectAndStoreRainData } from "./functions/collectAndStoreRainData.js"
 import { calculateAndStoreStatistics } from "./functions/calculateAndStoreStatistics.js";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 9867;
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -52,7 +52,7 @@ app.get("/", async (req, res) => {
       );
 
       // Check of er meer dan 1mm regen is voor animatie
-      const isRaining = weatherData.daily.precipitation_sum[0] > 3;
+      const isRaining = weatherData.daily.precipitation_sum[1] > 1;
 
       if (userInfo.rainBarrels == null) {
         res.render("zero", { currentDate: currentDate, isRaining: isRaining });
